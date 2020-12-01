@@ -83,7 +83,7 @@ export default function EmployeesPage() {
             const sortedByChar =
               items && items.filter(item => item.lastName[0] === charItem);
             return (
-              <div className={styles.charBlock}>
+              <div key={charItem} className={styles.charBlock}>
                 <p className={styles.charItem}>{charItem}</p>
                 {sortedByChar.length > 0 ? (
                   sortedByChar.map(item => (
