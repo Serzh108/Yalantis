@@ -8,7 +8,17 @@ const getEmployees = () => async (dispatch, getState) => {
   try {
     const employeesArray = await axios.get(url);
     const result = [...employeesArray.data];
-    const res = result.map(item => ({ ...item, checked: false }));
+    const { selectedId } = getState().employees;
+    // let res = result.map(item => ({ ...item, checked: false }));
+    const res = result.map(item =>
+      selectedId.includes(item.id)
+        ? { ...item, checked: true }
+        : { ...item, checked: false },
+    );
+    // const fromLocalRes = res.map(item =>
+    //   selectedId.includes(item.id) ? { ...item, checked: true } : item,
+    // );
+    // res = fromLocalRes;
     dispatch(employeesSlice.actions.getEmployees({ res }));
   } catch (err) {
     console.log('getEmployees error', err);
@@ -17,7 +27,9 @@ const getEmployees = () => async (dispatch, getState) => {
 };
 
 const setChecked = id => async (dispatch, getState) => {
-  dispatch(employeesSlice.actions.setChecked({ id }));
+  const { selectedId } = getState().employees;
+  const includesId = selectedId.includes(id);
+  dispatch(employeesSlice.actions.setChecked({ id, includesId }));
 };
 
 export { getEmployees, setChecked };

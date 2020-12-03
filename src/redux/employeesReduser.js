@@ -2,9 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const state = {
   items: [],
-  isLoading: false,
   selectedId: [],
-  checkedId: [1, 2, 3],
+  isLoading: false,
 };
 
 export const employeesSlice = createSlice({
@@ -20,7 +19,10 @@ export const employeesSlice = createSlice({
       items: state.items.map(item =>
         item.id !== payload.id ? item : { ...item, checked: !item.checked },
       ),
-      selectedId: state.selectedId.push(payload.id),
+      // selectedId: [...state.selectedId, payload.id],
+      selectedId: !payload.includesId
+        ? [...state.selectedId, payload.id]
+        : state.selectedId.filter(item => item !== payload.id),
     }),
     setIsLoading: state => ({
       ...state,
