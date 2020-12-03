@@ -9,16 +9,11 @@ const getEmployees = () => async (dispatch, getState) => {
     const employeesArray = await axios.get(url);
     const result = [...employeesArray.data];
     const { selectedId } = getState().employees;
-    // let res = result.map(item => ({ ...item, checked: false }));
     const res = result.map(item =>
       selectedId.includes(item.id)
         ? { ...item, checked: true }
         : { ...item, checked: false },
     );
-    // const fromLocalRes = res.map(item =>
-    //   selectedId.includes(item.id) ? { ...item, checked: true } : item,
-    // );
-    // res = fromLocalRes;
     dispatch(employeesSlice.actions.getEmployees({ res }));
   } catch (err) {
     console.log('getEmployees error', err);

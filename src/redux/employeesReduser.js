@@ -19,7 +19,6 @@ export const employeesSlice = createSlice({
       items: state.items.map(item =>
         item.id !== payload.id ? item : { ...item, checked: !item.checked },
       ),
-      // selectedId: [...state.selectedId, payload.id],
       selectedId: !payload.includesId
         ? [...state.selectedId, payload.id]
         : state.selectedId.filter(item => item !== payload.id),

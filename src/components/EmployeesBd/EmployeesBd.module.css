@@ -1,0 +1,24 @@
+.title {
+  padding: 16px 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.listDob {
+  width: 33%;
+  padding: 6px 12px 0;
+}
+
+.noSelected {
+  font-weight: 600;
+  font-size: 24px;
+  color: red;
+  border-top: 1px solid #ddd;
+}
+
+.charItem {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
