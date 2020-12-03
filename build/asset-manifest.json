@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.43a90da3.chunk.css",
-    "main.js": "/static/js/main.f6dd64e2.chunk.js",
-    "main.js.map": "/static/js/main.f6dd64e2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9fc23182.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9fc23182.js.map",
-    "static/css/2.5de4ecde.chunk.css": "/static/css/2.5de4ecde.chunk.css",
-    "static/js/2.d1749361.chunk.js": "/static/js/2.d1749361.chunk.js",
-    "static/js/2.d1749361.chunk.js.map": "/static/js/2.d1749361.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.5de4ecde.chunk.css.map": "/static/css/2.5de4ecde.chunk.css.map",
-    "static/css/main.43a90da3.chunk.css.map": "/static/css/main.43a90da3.chunk.css.map",
-    "static/js/2.d1749361.chunk.js.LICENSE.txt": "/static/js/2.d1749361.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/open-sans-v18-latin_cyrillic-regular.ec439cdb.eot",
-    "static/media/tv.3f84f7ab.png": "/static/media/tv.3f84f7ab.png"
+    "main.css": "/Yalantis/static/css/main.b03db573.chunk.css",
+    "main.js": "/Yalantis/static/js/main.719f7111.chunk.js",
+    "main.js.map": "/Yalantis/static/js/main.719f7111.chunk.js.map",
+    "runtime-main.js": "/Yalantis/static/js/runtime-main.52048c15.js",
+    "runtime-main.js.map": "/Yalantis/static/js/runtime-main.52048c15.js.map",
+    "static/css/2.de71bbd8.chunk.css": "/Yalantis/static/css/2.de71bbd8.chunk.css",
+    "static/js/2.f1017459.chunk.js": "/Yalantis/static/js/2.f1017459.chunk.js",
+    "static/js/2.f1017459.chunk.js.map": "/Yalantis/static/js/2.f1017459.chunk.js.map",
+    "index.html": "/Yalantis/index.html",
+    "static/css/2.de71bbd8.chunk.css.map": "/Yalantis/static/css/2.de71bbd8.chunk.css.map",
+    "static/css/main.b03db573.chunk.css.map": "/Yalantis/static/css/main.b03db573.chunk.css.map",
+    "static/js/2.f1017459.chunk.js.LICENSE.txt": "/Yalantis/static/js/2.f1017459.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Yalantis/static/media/open-sans-v18-latin_cyrillic-regular.ec439cdb.eot"
   },
   "entrypoints": [
-    "static/js/runtime-main.9fc23182.js",
-    "static/css/2.5de4ecde.chunk.css",
-    "static/js/2.d1749361.chunk.js",
-    "static/css/main.43a90da3.chunk.css",
-    "static/js/main.f6dd64e2.chunk.js"
+    "static/js/runtime-main.52048c15.js",
+    "static/css/2.de71bbd8.chunk.css",
+    "static/js/2.f1017459.chunk.js",
+    "static/css/main.b03db573.chunk.css",
+    "static/js/main.719f7111.chunk.js"
   ]
 }

@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/employees" exact component={EmployeesPage} />
-        <Redirect to="/employees" />
+        <Route path="/" exact component={EmployeesPage} />
+        <Redirect to="/" />
+        {/* <Route path="/employees" exact component={EmployeesPage} />
+        <Redirect to="/employees" /> */}
       </Switch>
     </div>
   );
